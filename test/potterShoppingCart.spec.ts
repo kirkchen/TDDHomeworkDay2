@@ -107,5 +107,22 @@ describe('PotterShoppingCart', function(){
       //// asert
       chai.assert.equal(expect, actual);
     });
+
+    it('buy_first_episode_for_one_and_buy_second_and_third_episode_for_two_the_price_should_be_100*3*0.9+100*2*0.95=460', function(){
+      //// arrange
+      var books: Book[] = [
+        { Episode: '1', Count: 1 },
+        { Episode: '2', Count: 2 },
+        { Episode: '3', Count: 2 },        
+      ];
+      var expect = 460;      
+
+      //// act
+      var shoppingCart = new PotterShoppingCart();
+      var actual = shoppingCart.Calculate(books);
+
+      //// asert
+      chai.assert.equal(expect, actual);
+    });
   });
 });
