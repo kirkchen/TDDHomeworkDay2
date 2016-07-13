@@ -2,6 +2,11 @@ import { Book } from '../models/book';
 
 export default class PotterShoppingCart {
     Calculate(books: Book[]): number {
-        return 0;
+        var totalPrice = 0;
+       for (var book of books) {
+           totalPrice += book.Count * 100;
+       }
+
+        return totalPrice;
     }
 }
