@@ -88,5 +88,24 @@ describe('PotterShoppingCart', function(){
       //// asert
       chai.assert.equal(expect, actual);
     });
+
+    it('buy_all_episode_the_price_should_be_100*5*0.75=375', function(){
+      //// arrange
+      var books: Book[] = [
+        { Episode: '1', Count: 1 },
+        { Episode: '2', Count: 1 },
+        { Episode: '3', Count: 1 },
+        { Episode: '4', Count: 1 },
+        { Episode: '5', Count: 1 },
+      ];
+      var expect = 375;      
+
+      //// act
+      var shoppingCart = new PotterShoppingCart();
+      var actual = shoppingCart.Calculate(books);
+
+      //// asert
+      chai.assert.equal(expect, actual);
+    });
   });
 });
