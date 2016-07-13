@@ -37,23 +37,6 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     });
 
-    it('buy_ond_first_episode_and_buy_one_second_episode_and_buy_one_third_episode_the_price_should_be_100*2*0.95=190', function(){
-      //// arrange
-      var books: Book[] = [
-        { Episode: '1', Count: 1 },
-        { Episode: '2', Count: 1 },
-        { Episode: '3', Count: 1 },
-      ];
-      var expect = 270;      
-
-      //// act
-      var shoppingCart = new PotterShoppingCart();
-      var actual = shoppingCart.Calculate(books);
-
-      //// asert
-      chai.assert.equal(expect, actual);
-    });  
-
     it('buy_ond_first_episode_and_buy_one_second_episode_and_buy_one_third_episode_the_price_should_be_100*3*0.9=270', function(){
       //// arrange
       var books: Book[] = [
