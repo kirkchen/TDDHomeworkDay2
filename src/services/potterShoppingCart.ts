@@ -6,7 +6,8 @@ export default class PotterShoppingCart {
     DiscountRule: DiscountRule[] = [
         { Count: 1, DiscountRate: 1 },
         { Count: 2, DiscountRate: 0.95 },
-        { Count: 3, DiscountRate: 0.9 },        
+        { Count: 3, DiscountRate: 0.9 },
+        { Count: 4, DiscountRate: 0.8 },             
     ]
 
     Calculate(books: Book[]): number {
