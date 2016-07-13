@@ -1,0 +1,17 @@
+{
+  "name": "tddhomeworkday2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "ts-node": "^0.9.3",
+    "typescript": "^1.8.10"
+  }
+}
