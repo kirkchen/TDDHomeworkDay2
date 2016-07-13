@@ -6,7 +6,7 @@ import PotterShoppingCart from '../src/services/potterShoppingCart';
 
 describe('PotterShoppingCart', function(){    
   describe('#Calculate()', function() {
-    it('buy_one_first_episode_the_price_should_be_100', function () {
+    it('Buy one first episode. The price should be 100', function () {
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 }
@@ -21,7 +21,7 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     })
 
-    it('buy_ond_first_episode_and_buy_one_second_episode_the_price_should_be_100*2*0.95=190', function(){
+    it('Buy one first episode and one second episode. The price should be 100 * 2 * 0.95 = 190', function(){
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 },
@@ -37,7 +37,7 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     });
 
-    it('buy_ond_first_episode_and_buy_one_second_episode_and_buy_one_third_episode_the_price_should_be_100*3*0.9=270', function(){
+    it('Buy first three episode for one. The price should be 100 * 3 * 0.9 = 270', function(){
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 },
@@ -54,7 +54,7 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     });     
 
-    it('buy_first_four_episode_the_price_should_be_100*4*0.8=320', function(){
+    it('Buy first four episode for one. The price should be 100 * 4 * 0.8 = 320', function(){
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 },
@@ -72,7 +72,7 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     });
 
-    it('buy_all_episode_the_price_should_be_100*5*0.75=375', function(){
+    it('Buy all episode for one. The price should be 100 * 5 * 0.75 = 375', function(){
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 },
@@ -91,7 +91,7 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     });
 
-    it('buy_first_and_second_episode_for_one_and_buy_third_episode_for_two_the_price_should_be_100*3*0.9+100=370', function(){
+    it('Buy first and second episode for one and third episode for two. The price should be 100 * 3 * 0.9 + 100 = 370', function(){
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 },
@@ -108,7 +108,7 @@ describe('PotterShoppingCart', function(){
       chai.assert.equal(expect, actual);
     });
 
-    it('buy_first_episode_for_one_and_buy_second_and_third_episode_for_two_the_price_should_be_100*3*0.9+100*2*0.95=460', function(){
+    it('Buy first episode for one. Buy second and third episode for two. The price should be 100 * 3 * 0.9 + 100 * 2 * 0.95 = 460', function(){
       //// arrange
       var books: Book[] = [
         { Episode: '1', Count: 1 },
