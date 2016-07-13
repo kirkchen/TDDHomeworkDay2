@@ -3,6 +3,7 @@
     "mocha": "registry:dt/mocha#2.2.5+20160619032855"
   },
   "dependencies": {
-    "chai": "registry:npm/chai#3.5.0+20160415060238"
+    "chai": "registry:npm/chai#3.5.0+20160415060238",
+    "lodash": "registry:npm/lodash#4.0.0+20160701205107"
   }
 }

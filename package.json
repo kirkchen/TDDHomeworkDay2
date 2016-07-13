@@ -13,5 +13,8 @@
     "mocha": "^2.5.3",
     "ts-node": "^0.9.3",
     "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
   }
 }
